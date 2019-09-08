@@ -1,54 +1,73 @@
 <nav class="grey darken-2">
   <div class="nav-wrapper">
-    <a href="root" class="brand-logo">Mesi</a>
+    <a href="/" class="brand-logo">Mesi</a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
       <li><a href="/foods/new">ご飯投稿</a></li>
-      <li><a href="badges.html">myご飯</a></li>
-      <li><a href="collapsible.html">ログアウト</a></li>
+      <li><a href="/users/sign_up">ユーザー登録</a></li>     
+      <%=link_to "ログアウト",destroy_user_session_path, class: "btn",method: :delete %>
     </ul>
   </div>
 </nav>
+
+
 <div id="wrapper">
     <div id="columns">
+      <% @food.each do |food| %>
         <div class="pin">
-          <img src="http://subtlepatterns.com/patterns/scribble_light.png" />
+          
+        </div>
+      <%end%>
+        <div class="pin">
+          <img src="https://free-materials.com/adm/wp-content/uploads/2016/11/adtDSC_4100.jpg" />
             
         </div>
         <div class="pin">
           <img src="https://617mi5y4.user.webaccel.jp/wp-content/uploads/2018/03/6a86c0f00a812c950aa455826e709875.jpg" />
         </div>
         <div class="pin">
-          <img src="https://617mi5y4.user.webaccel.jp/wp-content/uploads/2018/03/6a86c0f00a812c950aa455826e709875.jpg" />
+          <img src="https://cpw.imagenavi.jp/preview/173/17309266_PW36.jpg" />
         </div>
         <div class="pin">
-          <img src="https://617mi5y4.user.webaccel.jp/wp-content/uploads/2018/03/6a86c0f00a812c950aa455826e709875.jpg" />
+          <img src="https://www.photolibrary.jp/mhd8/img288/450-2013041422042061239.jpg" />
         </div>
         <div class="pin">
-          <img src="https://617mi5y4.user.webaccel.jp/wp-content/uploads/2018/03/6a86c0f00a812c950aa455826e709875.jpg" />
+          <img src="https://s3-ap-northeast-1.amazonaws.com/static.amanaimages.com/imgroom/rf_preview640/28177/28177003076.jpg" />
         </div>
         <div class="pin">
-          <img src="https://617mi5y4.user.webaccel.jp/wp-content/uploads/2018/03/6a86c0f00a812c950aa455826e709875.jpg" />
+          <img src="https://media.tenor.com/images/8b10afc361402315ce1d831c907f3d21/tenor.gif" />
         </div>
         <div class="pin">
-          <img src="https://617mi5y4.user.webaccel.jp/wp-content/uploads/2018/03/6a86c0f00a812c950aa455826e709875.jpg" />
+          <img src="http://fundo.jp/wp-content/uploads/2015/01/fd150109z009.gif" />
         </div>
         <div class="pin">
-          <img src="https://617mi5y4.user.webaccel.jp/wp-content/uploads/2018/03/6a86c0f00a812c950aa455826e709875.jpg" />
+          <img src="https://www.nikon-image.com/enjoy/life/familyphoto/img/technique14/pic_01_l.jpg" />
         </div>
         <div class="pin">
-          <img src="https://617mi5y4.user.webaccel.jp/wp-content/uploads/2018/03/6a86c0f00a812c950aa455826e709875.jpg" />
+          <img src="https://static-clip.jp.wazap.com/images/db/screenshot/cut/center/78645_640x360.jpg" />
         </div>
         <div class="pin">
-          <img src="https://617mi5y4.user.webaccel.jp/wp-content/uploads/2018/03/6a86c0f00a812c950aa455826e709875.jpg" />
+          <img src="https://617mi5y4.user.webaccel.jp/wp-content/uploads/2017/07/IMG_7394.jpg" />
         </div>
         <div class="pin">
-          <img src="https://617mi5y4.user.webaccel.jp/wp-content/uploads/2018/03/6a86c0f00a812c950aa455826e709875.jpg" />
+          <img src="https://s3-ap-northeast-1.amazonaws.com/goodspress/cms/wp-content/uploads/2017/07/oven_170723_1-720x480.jpg" />
         </div>
         <div class="pin">
-          <img src="https://617mi5y4.user.webaccel.jp/wp-content/uploads/2018/03/6a86c0f00a812c950aa455826e709875.jpg" />
+          <img src="https://rr.img.naver.jp/mig?src=http%3A%2F%2Fimgcc.naver.jp%2Fkaze%2Fmission_anm%2FUSER%2F20150610%2F69%2F6182739%2F37%2F500x215xe683f386e5ce4f4c364d60dd.gif&twidth=682&theight=5000&qlt=80&res_format=jpg&op=pt" />
         </div>
         <div class="pin">
-          <img src="https://617mi5y4.user.webaccel.jp/wp-content/uploads/2018/03/6a86c0f00a812c950aa455826e709875.jpg" />
+          <img src="https://617mi5y4.user.webaccel.jp/wp-content/uploads/2016/02/2013-09-14-14.40.372-695x4001.jpg" />
+        </div>
+        <div class="pin">
+          <img src="https://cdn.kurashi-no.jp/production/imgs/images/000/101/106/medium.jpg?1515337650" />
+            
+        </div>
+        <div class="pin">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtoeMSMWHeb1iMVAxJOEBAvg4K0FAD0sECD-Gq0kWYyhKQLU1L" />
+            
+        </div>
+        <div class="pin">
+          <img src="https://shonan-camp.com/wp-content/uploads/2018/07/iwatani-banner-cupnudle.jpg" />
+            
         </div>
 
     </div>

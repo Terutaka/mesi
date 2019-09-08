@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    
+  <%= form_for @food, url: '/foods' do |f| %>
+    <h3>
+        投稿する
+    </h3>
+    <%= f.text_field :title %>
+    <%= f.text_area :text %>
+    <%=f.label :image,"ユーザー画像" %>
+      <%= f.file_field :image %>
+    <%= f.submit %>
+  <% end %>
+    
+  </div>
+</div>

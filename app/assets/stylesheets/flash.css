@@ -1,0 +1,13 @@
+.notice{
+  background-color: rgb(92, 252, 164);
+  text-align: center;
+  color: white;
+  
+
+}
+.alert{
+  background-color: rgb(253, 104, 186);
+  text-align: center;
+  color: white;
+  
+}
