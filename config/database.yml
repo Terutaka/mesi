@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: mesi_production
-  username: mesi
-  password: <%= ENV['MESI_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
